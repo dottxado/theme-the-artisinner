@@ -1,0 +1,106 @@
+.site-header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	@at-root body.admin-bar & {
+		top: $admin-bar-height;
+	}
+	transition: all 0.5s ease-in-out;
+	&.scroll-to-top {
+		transform: translateY(-100%);
+	}
+}
+
+.home.blog .site-header, .home.page:not(.page-template-template-homepage) .site-header, .home.post-type-archive-product .site-header {
+	margin-bottom: 10px;
+}
+
+body.home.page #content {
+	margin-top: 20px;
+	.col-full {
+		max-width: none;
+		padding: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+.site-header-cart .cart-contents {
+	&:after {
+		@include breakpoint(more-sm) {
+			line-height: 1em;
+		}
+	}
+	@include breakpoint(more-sm) {
+		padding-top: 0.85em;
+		padding-bottom: 0.85em;
+		line-height: 1em;
+		margin-right: 10px;
+	}
+	.count {
+		opacity: 1;
+	}
+}
+
+
+
+body.home.page h1.entry-title {
+	display: none;
+}
+
+.edit-link {
+	display: none;
+}
+
+.site-header .site-branding {
+	margin-bottom: 0;
+}
+
+.site-header .site-branding img {
+	max-height: 43px;
+	margin-bottom: 0;
+	width: auto;
+}
+
+a:focus, button:focus, .button.alt:focus {
+	outline: none;
+}
+
+.site-header .col-full {
+	@include breakpoint(more-sm) {
+		float: none;
+		display: flex;
+	}
+	& > * {
+		@include breakpoint(more-sm) {
+			float: none !important;
+		}
+	}
+}
+
+.woocommerce-active .site-header .site-search {
+	@include breakpoint(more-sm) {
+		margin-bottom: 0;
+	}
+}
+
+.storefront-secondary-navigation.woocommerce-active .site-header .secondary-navigation {
+	@include breakpoint(more-sm) {
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+}
+
+.storefront-align-wide.page-template-template-fullwidth-php .hentry .entry-content .alignfull, .storefront-align-wide.page-template-template-fullwidth-php .hentry .entry-content .alignwide, .storefront-align-wide.storefront-full-width-content .hentry .entry-content .alignfull, .storefront-align-wide.storefront-full-width-content .hentry .entry-content .alignwide {
+	padding-left: 0;
+	padding-right: 0;
+	@include breakpoint(lg) {
+		padding-left: 0;
+		padding-right: 0;
+
+	}
+}

@@ -1,0 +1,28 @@
+.caption-on-slide .coblocks-gallery--caption {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 30px;
+	font-weight: 700;
+	text-shadow: 1px 1px 10px rgb(204, 204, 204), -1px -1px 10px rgb(204, 204, 204);
+}
+
+.caption-on-slide .coblocks-gallery--caption {
+	@include breakpoint(sm) {
+		top: 5%;
+		font-size: 18px;
+		width: 100%;
+	}
+	a {
+		/* for full implementation see the inline css */
+	}
+}
+
+
+.wp-block-coblocks-row:not(.has-small-padding), .wp-block-coblocks-row:not(.has-medium-padding), .wp-block-coblocks-row:not(.has-large-padding), .wp-block-coblocks-row:not(.has-huge-padding) {
+	margin-left: calc(25% - 25vw);
+	margin-right: calc(25% - 25vw);
+}
+
+

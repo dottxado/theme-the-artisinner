@@ -1,0 +1,12 @@
+{
+  "name": "dottxado/theartisinner",
+  "description": "The ArtiSinner WordPress theme",
+  "autoload": {
+    "psr-4": {
+      "dottxado\\theartisinner\\": "src/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}
