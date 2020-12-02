@@ -129,6 +129,9 @@ class ThemeDocumentation {
 			<li>
 				Rimossi contenuti "meta" (SKU, tag e categorie) dalla pagina del singolo prodotto
 			</li>
+			<li>
+				Aggiunta libreria per effetto "masonry" nella pagina di archivio dei prodotti, con compatibilità nel caso di visualizzazione di prodotti in 2, 3, 4, 5 e 6 colonne (vedi Customizer -> WooCommerce -> Product Catalog -> Products per row)
+			</li>
 		</ul>
 		<?php
 	}
