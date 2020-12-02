@@ -59,9 +59,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid-products {
 	margin-bottom: 20px;
-	&.columns-3 {
+
+	&.columns-2 {
 		.grid-products-item {
-			width: 33%;
+			width: 50%;
 			position: relative;
 
 			@include breakpoint(sm) {
@@ -71,9 +72,9 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 
-	&.columns-2 {
+	&.columns-3 {
 		.grid-products-item {
-			width: 50%;
+			width: 33%;
 			position: relative;
 
 			@include breakpoint(sm) {
@@ -104,6 +105,10 @@ h1, h2, h3, h4, h5, h6 {
 				width: 50%;
 			}
 
+			@include breakpoint(md) {
+				width: 25%;
+			}
+
 		}
 	}
 
@@ -116,6 +121,9 @@ h1, h2, h3, h4, h5, h6 {
 				width: 50%;
 			}
 
+			@include breakpoint(md) {
+				width: 25%;
+			}
 		}
 	}
 
