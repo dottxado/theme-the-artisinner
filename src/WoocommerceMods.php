@@ -45,7 +45,7 @@ class WoocommerceMods {
 	}
 
 	public function remove_hooks() {
-		remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+
 	}
 
 	/**
@@ -53,6 +53,7 @@ class WoocommerceMods {
 	 */
 	public function remove_actions() {
 		remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+		remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 	}
 
 	/**
@@ -70,6 +71,8 @@ class WoocommerceMods {
 	 * Add a class to the container of products into the archive page
 	 *
 	 * @param array $classes The container classes.
+	 *
+	 * @return array
 	 */
 	public function add_class_to_product_archive_grid( $classes ) {
 		$classes[] = 'grid-products-item';

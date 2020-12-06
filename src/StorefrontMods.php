@@ -54,7 +54,10 @@ class StorefrontMods {
 		add_filter( 'storefront_credit_links_output', array( $this, 'add_logo_in_footer' ) );
 		add_action( 'wp', array( $this, 'remove_actions' ) );
 		add_filter( 'wp_nav_menu_args', array( $this, 'add_my_account_to_secondary_menu' ) );
-		add_action( 'storefront_header', 'storefront_header_cart', 31 );
+		add_action( 'storefront_header', 'storefront_header_cart', 30 );
+		add_action( 'storefront_header', 'storefront_site_branding', 40 );
+		add_action( 'storefront_header', 'storefront_secondary_navigation', 20 );
+		add_action( 'storefront_header', 'storefront_product_search', 35 );
 	}
 
 	/**
@@ -70,6 +73,10 @@ class StorefrontMods {
 		remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 );
 		remove_action( 'woocommerce_after_shop_loop', 'woocommerce_result_count', 20 );
 		remove_action( 'storefront_header', 'storefront_header_cart', 60 );
+		remove_action( 'storefront_header', 'storefront_site_branding', 20 );
+		remove_action( 'storefront_header', 'storefront_secondary_navigation', 30 );
+		remove_action( 'storefront_header', 'storefront_product_search', 40 );
+
 	}
 
 	/**
