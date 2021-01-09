@@ -2,6 +2,7 @@ body.single-product {
 	.related.products {
 		.grid-products {
 			display: flex;
+			align-items: flex-start;
 		}
 	}
 }
