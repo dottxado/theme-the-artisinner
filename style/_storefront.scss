@@ -64,6 +64,10 @@ body.home.page h1.entry-title {
 	max-height: 43px;
 	margin-bottom: 0;
 	width: auto;
+	float: right;
+	@include breakpoint(sm) {
+		float: none;
+	}
 }
 
 a:focus, button:focus, .button.alt:focus {
@@ -102,5 +106,11 @@ a:focus, button:focus, .button.alt:focus {
 		padding-left: 0;
 		padding-right: 0;
 
+	}
+}
+
+.secondary-navigation {
+	.menu#menu-primary {
+		float: left;
 	}
 }
