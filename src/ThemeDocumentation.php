@@ -95,6 +95,9 @@ class ThemeDocumentation {
 					Spostato il minicart all'interno dell'header
 				</li>
 				<li>
+					Invertito l'ordine degli elementi all'interno dell'header
+				</li>
+				<li>
 					Modificato lo stile "inline" per adattarsi in maniera universali ai colori utilizzati all'interno
 					del customizer
 				</li>
@@ -104,6 +107,15 @@ class ThemeDocumentation {
 				</li>
 				<li>
 					Aggiunto il font Poppins ed utilizzato su tutto il sito
+				</li>
+				<li>
+					Aggiunto il font Texturina ed utilizzato per tutti i titoli
+				</li>
+				<li>
+					Allargato lo spazio a disposizione dei contenuti a full width
+				</li>
+				<li>
+					Aggiunto effetto al menu che lo fa sparire in caso di scroll in basso e lo fa ricomparire con scroll in alto
 				</li>
 			</ul>
 
