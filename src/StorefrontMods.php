@@ -88,8 +88,9 @@ class StorefrontMods {
 	 * @return array
 	 */
 	public function change_storefront_default_colors( $defaults ) {
-		$defaults['storefront_text_color']   = '#F1B51C';
-		$defaults['storefront_accent_color'] = '#DE5807';
+		$defaults['storefront_text_color']    = '#F1B51C';
+		$defaults['storefront_heading_color'] = '#F1B51C';
+		$defaults['storefront_accent_color']  = '#DE5807';
 
 		return $defaults;
 	}
