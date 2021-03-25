@@ -70,6 +70,7 @@
 
 	.grid-products-item {
 		overflow: hidden;
+		padding: 5px;
 		.onsale {
 			@include breakpoint(sm) {
 				display: none;
