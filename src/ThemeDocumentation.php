@@ -109,13 +109,17 @@ class ThemeDocumentation {
 					Aggiunto il font Poppins ed utilizzato su tutto il sito
 				</li>
 				<li>
-					Aggiunto il font Texturina ed utilizzato per tutti i titoli
+					Aggiunto il font Allura ed utilizzato per tutti i titoli
 				</li>
 				<li>
 					Allargato lo spazio a disposizione dei contenuti a full width
 				</li>
 				<li>
 					Aggiunto effetto al menu che lo fa sparire in caso di scroll in basso e lo fa ricomparire con scroll in alto
+				</li>
+
+				<li>
+					Cambiati i colori di default per Heading, Text e Link/Accent
 				</li>
 			</ul>
 
