@@ -58,6 +58,7 @@ class StorefrontMods {
 		add_action( 'storefront_header', 'storefront_site_branding', 40 );
 		add_action( 'storefront_header', 'storefront_secondary_navigation', 20 );
 		add_action( 'storefront_header', 'storefront_product_search', 35 );
+		add_filter( 'storefront_setting_default_values', array( $this, 'change_storefront_default_colors' ) );
 	}
 
 	/**
@@ -77,6 +78,20 @@ class StorefrontMods {
 		remove_action( 'storefront_header', 'storefront_secondary_navigation', 30 );
 		remove_action( 'storefront_header', 'storefront_product_search', 40 );
 
+	}
+
+	/**
+	 * Change the Storefront default colors
+	 *
+	 * @param array $defaults The default Storefront colors.
+	 *
+	 * @return array
+	 */
+	public function change_storefront_default_colors( $defaults ) {
+		$defaults['storefront_text_color']   = '#F1B51C';
+		$defaults['storefront_accent_color'] = '#DE5807';
+
+		return $defaults;
 	}
 
 	/**
