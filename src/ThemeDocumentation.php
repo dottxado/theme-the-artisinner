@@ -112,7 +112,7 @@ class ThemeDocumentation {
 					Aggiunto il font Allura ed utilizzato per tutti i titoli
 				</li>
 				<li>
-					Allargato lo spazio a disposizione dei contenuti a full width
+					Allargato lo spazio a disposizione dei contenuti a full width (MOMENTANEAMENTE RIMOSSO)
 				</li>
 				<li>
 					Aggiunto effetto al menu che lo fa sparire in caso di scroll in basso e lo fa ricomparire con scroll in alto

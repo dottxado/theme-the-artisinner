@@ -113,13 +113,13 @@ a:focus, button:focus, .button.alt:focus {
 }
 
 .storefront-align-wide.page-template-template-fullwidth-php .hentry .entry-content .alignfull, .storefront-align-wide.page-template-template-fullwidth-php .hentry .entry-content .alignwide, .storefront-align-wide.storefront-full-width-content .hentry .entry-content .alignfull, .storefront-align-wide.storefront-full-width-content .hentry .entry-content .alignwide {
-	padding-left: 0;
-	padding-right: 0;
-	@include breakpoint(lg) {
-		padding-left: 0;
-		padding-right: 0;
-
-	}
+	//padding-left: 0;
+	//padding-right: 0;
+	//@include breakpoint(lg) {
+	//	padding-left: 0;
+	//	padding-right: 0;
+	//
+	//}
 }
 
 .secondary-navigation {
